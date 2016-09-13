@@ -1,0 +1,1 @@
+[Tue Sep 13 21:10:47.038457 2016] [:error] [pid 22463] [client 127.0.0.1:58654] \xd0\x9f\xd0\xbe\xd0\xbc\xd0\xb8\xd0\xbb\xd0\xba\xd0\xb0 \xd0\x91\xd0\x94 WordPress  Unknown column 'wp_' in 'field list' \xd0\xb4\xd0\xbb\xd1\x8f \xd0\xb7\xd0\xb0\xd0\xbf\xd0\xb8\xd1\x82\xd1\x83SELECT wp_, referer: http://testblog/wp-admin/setup-config.php?step=1&language=uk
