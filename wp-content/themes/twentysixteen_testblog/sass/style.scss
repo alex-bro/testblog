@@ -1,0 +1,41 @@
+#masthead {
+  padding: 0 4.5455%;
+}
+.theme-header {
+    border: 1px solid black!important;
+    border-top: 2px solid black!important;
+    border-left: 2px solid black!important;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    margin-bottom: 30px;
+  }
+
+.triangle {
+  background: url(../images/bg-triangle.png) no-repeat -23px;
+  background-size: 40%;
+  margin-bottom: 30px;
+}
+.left-side, .right-side {
+  color: #130f8a;
+}
+
+.sidebar {
+  float: left!important;
+  margin-left: 0!important;
+  padding: 0;
+  width: auto!important;
+}
+
+.widget {
+  border-top: 0!important;
+}
+
+.widget .widget-title {
+  font-size: 18pt!important;
+  font-family: symbol!important;
+}
+.textwidget {
+  font-size: 14pt!important;
+  font-family: symbol!important;
+}

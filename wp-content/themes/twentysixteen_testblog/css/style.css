@@ -1,0 +1,52 @@
+/* line 1, ../sass/style.scss */
+#masthead {
+  padding: 0 4.5455%;
+}
+
+/* line 4, ../sass/style.scss */
+.theme-header {
+  border: 1px solid black !important;
+  border-top: 2px solid black !important;
+  border-left: 2px solid black !important;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  margin-bottom: 30px;
+}
+
+/* line 14, ../sass/style.scss */
+.triangle {
+  background: url(../images/bg-triangle.png) no-repeat -23px;
+  background-size: 40%;
+  margin-bottom: 30px;
+}
+
+/* line 19, ../sass/style.scss */
+.left-side, .right-side {
+  color: #130f8a;
+}
+
+/* line 23, ../sass/style.scss */
+.sidebar {
+  float: left !important;
+  margin-left: 0 !important;
+  padding: 0;
+  width: auto !important;
+}
+
+/* line 30, ../sass/style.scss */
+.widget {
+  border-top: 0 !important;
+}
+
+/* line 34, ../sass/style.scss */
+.widget .widget-title {
+  font-size: 18pt !important;
+  font-family: symbol !important;
+}
+
+/* line 38, ../sass/style.scss */
+.textwidget {
+  font-size: 14pt !important;
+  font-family: symbol !important;
+}
