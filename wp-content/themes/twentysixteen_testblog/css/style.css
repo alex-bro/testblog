@@ -27,11 +27,11 @@
 }
 
 /* line 23, ../sass/style.scss */
-.sidebar {
+.abv_sidebar .sidebar {
   float: left !important;
   margin-left: 0 !important;
   padding: 0;
-  width: auto !important;
+  width: 100% !important;
 }
 
 /* line 30, ../sass/style.scss */

@@ -1,0 +1,21 @@
+.abv_widget_wrapper {
+    border: 2px solid #130f8a;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.abv_widget_wrapper .widget .widget-title {
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.046875em;
+    line-height: 1.3125;
+    margin: 0 0 1.75em;
+    text-transform: none;
+    color: #130f8a;
+}
+
+.abv_widget_wrapper .widget p a {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: black;
+}

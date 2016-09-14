@@ -4,20 +4,41 @@ if (!defined('ABSPATH')) exit;
 
 class AbvArticle
 {
+    /**
+     * plugin directory
+     *
+     * @var string
+     */
     public $pluginDir;
+
+    /**
+     * plugin URL
+     *
+     * @var
+     */
     public $pluginUrl;
 
+    /**
+     * constructor class
+     */
     function __construct()
     {
         $this->pluginDir = dirname(__FILE__);
         $this->pluginUrl = plugin_dir_url(__FILE__);
     }
 
+    /**
+     * run plugin
+     */
     function run()
     {
+        require('AbvWidget.php');
         $this->wpActionsFilters();
     }
 
+    /**
+     * init settings
+     */
     function init()
     {
 
@@ -44,7 +65,15 @@ class AbvArticle
      */
     function enqueueStyles()
     {
-        wp_enqueue_style('abvNewPostStyle', $this->pluginUrl . '/css/styles.css');
+        wp_enqueue_style('abvArticleStyle', $this->pluginUrl . '/css/style.css');
+    }
+
+    /**
+     * add transcription to plugin
+     */
+    function addLanguage()
+    {
+        load_plugin_textdomain('abv-article', false, $this->pluginDir . '/languages/');
     }
 
     /**
@@ -55,15 +84,16 @@ class AbvArticle
         add_action('init', array($this, 'init'));
         add_action('wp_enqueue_scripts', array($this, 'enqueueStyles'));
         add_action('after_setup_theme', array($this, 'addLanguage'));
+        add_action('widgets_init', array($this, 'registerAbvWidget'));
     }
-
 
     /**
-     * add transcription to plugin
+     * register widget
      */
-    function addLanguage()
+    function registerAbvWidget()
     {
-        load_plugin_textdomain('abv-article', false, dirname(plugin_basename(__FILE__)) . '/languages/');
+        register_widget('AbvWidget');
     }
+
 
 }

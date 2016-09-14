@@ -40,7 +40,6 @@ class AbvTestBlog
      * add styles and js
      */
     private function enqueueStyles(){
-        //wp_register_script('abvKolokoloJquery', $this->themeUrl . "/js/jquery-1.11.3.min.js",false,false);
         wp_register_script('abvBootstrap', $this->themeUrl . "/js/bootstrap.min.js",false,false);
 
         wp_enqueue_script('jquery');
